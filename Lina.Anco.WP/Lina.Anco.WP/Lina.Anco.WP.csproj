@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A61D6AB9-DCA3-4729-AB42-7E3A89C51DC4}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lina.Anco.WP</RootNamespace>
+    <AssemblyName>Lina.Anco.WP</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Lina.Anco.WP_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Lina.Anco.WP.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StartGame.xaml.cs">
+      <DependentUpon>StartGame.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StartGame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Font\ft60.ttf" />
+    <None Include="Assets\Font\Roboto-Black.ttf" />
+    <None Include="Assets\Font\Roboto-BlackItalic.ttf" />
+    <None Include="Assets\Font\Roboto-Bold.ttf" />
+    <None Include="Assets\Font\Roboto-BoldItalic.ttf" />
+    <None Include="Assets\Font\Roboto-Italic.ttf" />
+    <None Include="Assets\Font\Roboto-Light.ttf" />
+    <None Include="Assets\Font\Roboto-LightItalic.ttf" />
+    <None Include="Assets\Font\Roboto-Medium.ttf" />
+    <None Include="Assets\Font\Roboto-MediumItalic.ttf" />
+    <None Include="Assets\Font\Roboto-Regular.ttf" />
+    <None Include="Assets\Font\Roboto-Thin.ttf" />
+    <None Include="Assets\Font\Roboto-ThinItalic.ttf" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\appbar.control.play.png" />
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\amthanh%402x.png" />
+    <Content Include="Assets\Images\amthanh.png" />
+    <Content Include="Assets\Images\backgroud%402x.png" />
+    <Content Include="Assets\Images\backgroud.png" />
+    <Content Include="Assets\Images\bangdiem%402x.png" />
+    <Content Include="Assets\Images\bangdiem.png" />
+    <Content Include="Assets\Images\contiune%402x.png" />
+    <Content Include="Assets\Images\contiune.png" />
+    <Content Include="Assets\Images\contiunePlay%402x.png" />
+    <Content Include="Assets\Images\contiunePlay.png" />
+    <Content Include="Assets\Images\dau bang%402x.png" />
+    <Content Include="Assets\Images\dau bang.png" />
+    <Content Include="Assets\Images\dau chia%402x.png" />
+    <Content Include="Assets\Images\dau chia.png" />
+    <Content Include="Assets\Images\dau cong%402x.png" />
+    <Content Include="Assets\Images\dau cong.png" />
+    <Content Include="Assets\Images\dau hoi%402x.png" />
+    <Content Include="Assets\Images\dau hoi.png" />
+    <Content Include="Assets\Images\dau nhan%402x.png" />
+    <Content Include="Assets\Images\dau nhan.png" />
+    <Content Include="Assets\Images\dau tru%402x.png" />
+    <Content Include="Assets\Images\dau tru.png" />
+    <Content Include="Assets\Images\dauhoi%402x.png" />
+    <Content Include="Assets\Images\dauhoi.png" />
+    <Content Include="Assets\Images\dau_bang%402x.png" />
+    <Content Include="Assets\Images\dau_bang.png" />
+    <Content Include="Assets\Images\dau_chia%402x.png" />
+    <Content Include="Assets\Images\dau_chia.png" />
+    <Content Include="Assets\Images\dau_cong%402x.png" />
+    <Content Include="Assets\Images\dau_cong.png" />
+    <Content Include="Assets\Images\dau_hoi%402x.png" />
+    <Content Include="Assets\Images\dau_hoi.png" />
+    <Content Include="Assets\Images\dau_nhan%402x.png" />
+    <Content Include="Assets\Images\dau_nhan.png" />
+    <Content Include="Assets\Images\dau_tru%402x.png" />
+    <Content Include="Assets\Images\dau_tru.png" />
+    <Content Include="Assets\Images\game-Cauhoi.jpg" />
+    <Content Include="Assets\Images\gameover%402x.png" />
+    <Content Include="Assets\Images\gameover.png" />
+    <Content Include="Assets\Images\huychuong%402x.png" />
+    <Content Include="Assets\Images\huychuong.png" />
+    <Content Include="Assets\Images\icon100px.png" />
+    <Content Include="Assets\Images\icon1024px.png" />
+    <Content Include="Assets\Images\icon114px.png" />
+    <Content Include="Assets\Images\icon120px.png" />
+    <Content Include="Assets\Images\icon144px.png" />
+    <Content Include="Assets\Images\icon152px.png" />
+    <Content Include="Assets\Images\icon29px.png" />
+    <Content Include="Assets\Images\icon40px.png" />
+    <Content Include="Assets\Images\icon50px.png" />
+    <Content Include="Assets\Images\icon512px.png" />
+    <Content Include="Assets\Images\icon512px_winphone.png" />
+    <Content Include="Assets\Images\icon57px.png" />
+    <Content Include="Assets\Images\icon58px.png" />
+    <Content Include="Assets\Images\icon72px.png" />
+    <Content Include="Assets\Images\icon76px.png" />
+    <Content Include="Assets\Images\icon80px.png" />
+    <Content Include="Assets\Images\khungsetting%40x2.png" />
+    <Content Include="Assets\Images\khungsetting.png" />
+    <Content Include="Assets\Images\khungsetting_chieucao%40x2.png" />
+    <Content Include="Assets\Images\khungsetting_chieucao.png" />
+    <Content Include="Assets\Images\loading%402x.png" />
+    <Content Include="Assets\Images\loading.png" />
+    <Content Include="Assets\Images\loading3inch%402x.png" />
+    <Content Include="Assets\Images\loading3inch.png" />
+    <Content Include="Assets\Images\loadingimage%402x.png" />
+    <Content Include="Assets\Images\loadingimage.png" />
+    <Content Include="Assets\Images\logo_44px.png" />
+    <Content Include="Assets\Images\logo_88px.png" />
+    <Content Include="Assets\Images\manhinhden%402x.png" />
+    <Content Include="Assets\Images\manhinhden.png" />
+    <Content Include="Assets\Images\nextlevel%402x.png" />
+    <Content Include="Assets\Images\nextlevel.png" />
+    <Content Include="Assets\Images\NotRung%402x.png" />
+    <Content Include="Assets\Images\NotRung.png" />
+    <Content Include="Assets\Images\Not_amthanh%402x.png" />
+    <Content Include="Assets\Images\Not_amthanh.png" />
+    <Content Include="Assets\Images\Not_Rung%402x.png" />
+    <Content Include="Assets\Images\Not_Rung.png" />
+    <Content Include="Assets\Images\pause%402x.png" />
+    <Content Include="Assets\Images\pause.png" />
+    <Content Include="Assets\Images\play%402x.png" />
+    <Content Include="Assets\Images\play.png" />
+    <Content Include="Assets\Images\rung%402x.png" />
+    <Content Include="Assets\Images\Rung.png" />
+    <Content Include="Assets\Images\saolon%402x.png" />
+    <Content Include="Assets\Images\saolon.png" />
+    <Content Include="Assets\Images\saonho%402x.png" />
+    <Content Include="Assets\Images\saonho.png" />
+    <Content Include="Assets\Images\saovua%402x.png" />
+    <Content Include="Assets\Images\saovua.png" />
+    <Content Include="Assets\Images\setting%402x.png" />
+    <Content Include="Assets\Images\setting.png" />
+    <Content Include="Assets\Images\start%402x.png" />
+    <Content Include="Assets\Images\start.png" />
+    <Content Include="Assets\Sound\comedy-bounce.mp3" />
+    <Content Include="Assets\Sound\dinh.wav" />
+    <Content Include="Assets\Sound\music.m4a" />
+    <Content Include="Assets\Sound\Votay.mp3" />
+    <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileMedium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileMediumLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Lina.AnCo.Core">
+      <HintPath>C:\Users\Le\Desktop\CtyCore\Lina.Anco\Lina.AnCo\Lina.AnCo.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Lina.Customs.Core">
+      <HintPath>C:\Users\Le\Desktop\CtyCore\Lina.Anco\Lina.AnCo\Lina.Customs.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Users\Le\Desktop\commitCty_2\Lina.Store.WP.Test1.0\Bin\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>C:\Users\Le\Desktop\commitCty_2\Lina.Store.WP.Test1.0\Bin\Debug\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>C:\Users\Le\Desktop\commitCty_2\Lina.Store.WP.Test1.0\Bin\Debug\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>C:\Users\Le\Desktop\commitCty_2\Lina.Store.WP.Test1.0\Bin\Debug\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Le\Desktop\commitCty_2\Lina.Store.WP1.0\Lina.Store.WP\Lina.Customs.WP.csproj">
+      <Project>{7a862824-5dbe-45a9-a20d-8472b767fe2c}</Project>
+      <Name>Lina.Customs.WP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

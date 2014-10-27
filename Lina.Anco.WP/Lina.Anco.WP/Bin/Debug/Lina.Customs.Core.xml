@@ -1,0 +1,633 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lina.Customs.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Lina.Customs.Core.IPlatformService">
+            <summary>
+            I platform service.
+            </summary>
+        </member>
+        <member name="P:Lina.Customs.Core.IPlatformService.Version">
+            <summary>
+            Gets the version. Return iOS, Android, WindowPhone
+            </summary>
+            <value>The version.</value>
+        </member>
+        <member name="M:Lina.Customs.Core.IPlatformService.ShowAlert(System.String,System.String,System.String,System.Action)">
+            <summary>
+            Shows the alert.
+            </summary>
+            <param name="title">Title.</param>
+            <param name="messages">Messages.</param>
+            <param name="titleDone">Title done.</param>
+            <param name="actionDone">Action done.</param>
+        </member>
+        <member name="M:Lina.Customs.Core.IPlatformService.ShowAlert(System.String,System.String,System.String,System.String,System.Action,System.Action)">
+            <summary>
+            Shows the alert.
+            </summary>
+            <param name="title">Title.</param>
+            <param name="messages">Messages.</param>
+            <param name="titleDone">Title done.</param>
+            <param name="titleCancel">Title cancel.</param>
+            <param name="actionDone">Action done.</param>
+            <param name="actionCancel">Action cancel.</param>
+        </member>
+        <member name="M:Lina.Customs.Core.IPlatformService.ShowLoadingView(System.String)">
+            <summary>
+            Shows the loading view.
+            </summary>
+            <param name="title">Title.</param>
+        </member>
+        <member name="M:Lina.Customs.Core.IPlatformService.HideLoadingView">
+            <summary>
+            Hides the loading view.
+            </summary>
+        </member>
+        <member name="M:Lina.Customs.Core.IPlatformService.StreamAudio(System.String,System.Action{System.Boolean})">
+            <summary>
+            Streams the audio. PathAudio có thể là 1 file local hoặc file trên internet
+            </summary>
+            <param name="pathAudio">Path audio.</param>
+            <param name="actionDone">Action done.</param>
+        </member>
+        <member name="M:Lina.Customs.Core.IPlatformService.StopStreamAudio(System.Action{System.Boolean})">
+            <summary>
+            Stops the stream audio.
+            </summary>
+            <param name="actionDone">Action done.</param>
+        </member>
+        <member name="M:Lina.Customs.Core.IPlatformService.GetAlbums(System.Action{System.Boolean,System.Collections.Generic.List{Lina.Customs.Core.AlbumModel}})">
+            <summary>
+            Gets the albums.
+            </summary>
+            <param name="actionDone">Action done.</param>
+        </member>
+        <member name="M:Lina.Customs.Core.IPlatformService.GetPhotos(System.String,System.Action{System.Boolean,System.Collections.Generic.List{Lina.Customs.Core.PhotoModel}})">
+            <summary>
+            Gets the photos.
+            </summary>
+            <param name="album">Album.</param>
+            <param name="actionDone">Action done.</param>
+        </member>
+        <member name="M:Lina.Customs.Core.IPlatformService.BeginActionOnMainThread(System.Action)">
+            <summary>
+            Begins the action on main thread.
+            </summary>
+            <param name="action">Action.</param>
+        </member>
+        <member name="M:Lina.Customs.Core.IPlatformService.Vibrate">
+            <summary>
+            Shake the specified actionDone.
+            </summary>
+            <param name="actionDone">Action done.</param>
+        </member>
+        <member name="T:Lina.Customs.Core.PlatformService">
+            <summary>
+            Platform service.
+            </summary>
+        </member>
+        <member name="P:Lina.Customs.Core.PlatformService.Version">
+            <summary>
+            Gets the version. Return iOS, Android, WindowPhone
+            </summary>
+            <value>The version.</value>
+        </member>
+        <member name="M:Lina.Customs.Core.PlatformService.ShowAlert(System.String,System.String,System.String,System.Action)">
+            <summary>
+            Shows the alert.
+            </summary>
+            <param name="title">Title.</param>
+            <param name="messages">Messages.</param>
+            <param name="titleDone">Title done.</param>
+            <param name="actionDone">Action done.</param>
+        </member>
+        <member name="M:Lina.Customs.Core.PlatformService.ShowAlert(System.String,System.String,System.String,System.String,System.Action,System.Action)">
+            <summary>
+            Shows the alert.
+            </summary>
+            <param name="title">Title.</param>
+            <param name="messages">Messages.</param>
+            <param name="titleDone">Title done.</param>
+            <param name="titleCancel">Title cancel.</param>
+            <param name="actionDone">Action done.</param>
+            <param name="actionCancel">Action cancel.</param>
+        </member>
+        <member name="M:Lina.Customs.Core.PlatformService.ShowLoadingView(System.String)">
+            <summary>
+            Shows the loading view.
+            </summary>
+            <param name="title">Title.</param>
+        </member>
+        <member name="M:Lina.Customs.Core.PlatformService.HideLoadingView">
+            <summary>
+            Hides the loading view.
+            </summary>
+        </member>
+        <member name="M:Lina.Customs.Core.PlatformService.StreamAudio(System.String,System.Action{System.Boolean})">
+            <summary>
+            Streams the audio. PathAudio có thể là 1 file local hoặc file trên internet
+            </summary>
+            <param name="pathAudio">Path audio.</param>
+            <param name="actionDone">Action done.</param>
+        </member>
+        <member name="M:Lina.Customs.Core.PlatformService.StopStreamAudio(System.Action{System.Boolean})">
+            <summary>
+            Stops the stream audio.
+            </summary>
+            <param name="actionDone">Action done.</param>
+        </member>
+        <member name="M:Lina.Customs.Core.PlatformService.GetAlbums(System.Action{System.Boolean,System.Collections.Generic.List{Lina.Customs.Core.AlbumModel}})">
+            <summary>
+            Gets the albums.
+            </summary>
+            <param name="actionDone">Action done.</param>
+        </member>
+        <member name="M:Lina.Customs.Core.PlatformService.GetPhotos(System.String,System.Action{System.Boolean,System.Collections.Generic.List{Lina.Customs.Core.PhotoModel}})">
+            <summary>
+            Gets the photos.
+            </summary>
+            <param name="album">Album.</param>
+            <param name="actionDone">Action done.</param>
+        </member>
+        <member name="M:Lina.Customs.Core.PlatformService.BeginActionOnMainThread(System.Action)">
+            <summary>
+            Begins the action on main thread.
+            </summary>
+            <param name="action">Action.</param>
+        </member>
+        <member name="M:Lina.Customs.Core.PlatformService.Vibrate">
+            <summary>
+            Shake the specified actionDone.
+            </summary>
+            <param name="actionDone">Action done.</param>
+        </member>
+        <member name="T:Lina.Customs.Core.ISettingService">
+            <summary>
+            I setting service.
+            </summary>
+        </member>
+        <member name="M:Lina.Customs.Core.ISettingService.GetValueOrDefault``1(System.String,``0)">
+            <summary>
+            Gets the current value or the default that you specify.
+            </summary>
+            <typeparam name="T">Vaue of t (bool, int, float, long, string)</typeparam>
+            <param name="key">Key for settings</param>
+            <param name="defaultValue">default value if not set</param>
+            <returns>Value or default</returns>
+        </member>
+        <member name="M:Lina.Customs.Core.ISettingService.AddOrUpdateValue(System.String,System.Object)">
+            <summary>
+            Adds or updates the value
+            </summary>
+            <param name="key">Key for settting</param>
+            <param name="value">Value to set</param>
+            <returns>True of was added or updated and you need to save it.</returns>
+        </member>
+        <member name="M:Lina.Customs.Core.ISettingService.Save">
+            <summary>
+            Saves any changes out.
+            </summary>
+        </member>
+        <member name="T:Lina.Customs.Core.SettingService">
+            <summary>
+            Setting service.
+            </summary>
+        </member>
+        <member name="M:Lina.Customs.Core.SettingService.GetValueOrDefault``1(System.String,``0)">
+            <summary>
+            Gets the current value or the default that you specify.
+            </summary>
+            <typeparam name="T">Vaue of t (bool, int, float, long, string)</typeparam>
+            <param name="key">Key for settings</param>
+            <param name="defaultValue">default value if not set</param>
+            <returns>Value or default</returns>
+        </member>
+        <member name="M:Lina.Customs.Core.SettingService.AddOrUpdateValue(System.String,System.Object)">
+            <summary>
+            Adds or updates the value
+            </summary>
+            <param name="key">Key for settting</param>
+            <param name="value">Value to set</param>
+            <returns>True of was added or updated and you need to save it.</returns>
+        </member>
+        <member name="M:Lina.Customs.Core.SettingService.Save">
+            <summary>
+            Saves any changes out.
+            </summary>
+        </member>
+        <member name="T:Lina.Customs.Core.ServiceContainer">
+            <summary>
+            Service container.
+            </summary>
+        </member>
+        <member name="M:Lina.Customs.Core.ServiceContainer.Register``1(``0)">
+            <summary>
+            Register the specified service.
+            </summary>
+            <param name="service">Service.</param>
+            <typeparam name="TService">The 1st type parameter.</typeparam>
+        </member>
+        <member name="M:Lina.Customs.Core.ServiceContainer.Register``1">
+            <summary>
+            Register this instance.
+            </summary>
+            <typeparam name="TService">The 1st type parameter.</typeparam>
+        </member>
+        <member name="M:Lina.Customs.Core.ServiceContainer.Register``1(System.Func{System.Object})">
+            <summary>
+            Register the specified function.
+            </summary>
+            <param name="function">Function.</param>
+            <typeparam name="TService">The 1st type parameter.</typeparam>
+        </member>
+        <member name="M:Lina.Customs.Core.ServiceContainer.Resolve``1">
+            <summary>
+            Resolve this instance.
+            </summary>
+            <typeparam name="TService">The 1st type parameter.</typeparam>
+        </member>
+        <member name="M:Lina.Customs.Core.ServiceContainer.Resolve``1(System.Func{System.Object})">
+            <summary>
+            Resolve the specified function.
+            </summary>
+            <param name="function">Function.</param>
+            <typeparam name="TService">The 1st type parameter.</typeparam>
+        </member>
+        <member name="T:Lina.Customs.Core.IConverterService">
+            <summary>
+            I converter service.
+            </summary>
+        </member>
+        <member name="M:Lina.Customs.Core.IConverterService.TimeToString(System.Int32)">
+            <summary>
+            Times to string. Unit Second
+            </summary>
+            <returns>The to string.</returns>
+            <param name="time">Time.</param>
+        </member>
+        <member name="T:Lina.Customs.Core.ConverterService">
+            <summary>
+            Converter service.
+            </summary>
+        </member>
+        <member name="M:Lina.Customs.Core.ConverterService.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Lina.Customs.Core.ConverterService" /> class.
+            </summary>
+        </member>
+        <member name="M:Lina.Customs.Core.ConverterService.TimeToString(System.Int32)">
+            <summary>
+            Times to string. Unit Second
+            </summary>
+            <returns>The to string.</returns>
+            <param name="time">Time.</param>
+        </member>
+        <member name="T:Lina.Customs.Core.IPaymentService">
+            <summary>
+            I payment service.
+            </summary>
+        </member>
+        <member name="M:Lina.Customs.Core.IPaymentService.Pay(System.String,System.Action{System.Boolean,System.String})">
+            <summary>
+            productId: Mã sản phẩm, nếu pay ok thì actionDone(true,Giá trị) ngược lại actionDone(false,0)
+            </summary>
+            <param name="productId">Product identifier.</param>
+            <param name="actionDone">Action done.</param>
+        </member>
+        <member name="T:Lina.Customs.Core.PaymentService">
+            <summary>
+            Payment service.
+            </summary>
+        </member>
+        <member name="M:Lina.Customs.Core.PaymentService.Pay(System.String,System.Action{System.Boolean,System.String})">
+            <summary>
+            productId: Mã sản phẩm, nếu pay ok thì actionDone(true,Giá trị) ngược lại actionDone(false,0)
+            </summary>
+            <param name="productId">Product identifier.</param>
+            <param name="actionDone">Action done.</param>
+        </member>
+        <member name="T:Lina.Customs.Core.Platform">
+            <summary>
+            Platform.
+            </summary>
+        </member>
+        <member name="F:Lina.Customs.Core.Platform.iOS">
+            <summary>
+            The iOS.
+            </summary>
+        </member>
+        <member name="F:Lina.Customs.Core.Platform.Android">
+            <summary>
+            The android.
+            </summary>
+        </member>
+        <member name="F:Lina.Customs.Core.Platform.WindowPhone">
+            <summary>
+            The window phone.
+            </summary>
+        </member>
+        <member name="F:Lina.Customs.Core.Platform.Unknow">
+            <summary>
+            The unknow.
+            </summary>
+        </member>
+        <member name="T:Lina.Customs.Core.ProductModel">
+            <summary>
+            Product type.
+            </summary>
+        </member>
+        <member name="T:Lina.Customs.Core.ProductModel.IOS">
+            <summary>
+            IO.
+            </summary>
+        </member>
+        <member name="F:Lina.Customs.Core.ProductModel.IOS.P099">
+            <summary>
+            The p099. Price: 0.99$
+            </summary>
+        </member>
+        <member name="T:Lina.Customs.Core.ProductModel.WindowsPhone">
+            <summary>
+            Windows phone.
+            </summary>
+        </member>
+        <member name="F:Lina.Customs.Core.ProductModel.WindowsPhone.P099">
+            <summary>
+            The p099. Price: 0.99$
+            </summary>
+        </member>
+        <member name="T:Lina.Customs.Core.ProductModel.Android">
+            <summary>
+            Android.
+            </summary>
+        </member>
+        <member name="F:Lina.Customs.Core.ProductModel.Android.P099">
+            <summary>
+            The p099. Price: 0.99$
+            </summary>
+        </member>
+        <member name="T:Lina.Customs.Core.ISystemService">
+            <summary>
+            I system service.
+            </summary>
+        </member>
+        <member name="M:Lina.Customs.Core.ISystemService.CountDown(System.Int32,System.Action,System.Action,System.Int32)">
+            <summary>
+            Counts down. atTime and timeStep unit second
+            </summary>
+            <param name="atTime">At time.</param>
+            <param name="actionStep">Action step.</param>
+            <param name="actionDone">Action done.</param>
+            <param name="timeStep">Time step.</param>
+        </member>
+        <member name="T:Lina.Customs.Core.SystemService">
+            <summary>
+            System service.
+            </summary>
+        </member>
+        <member name="M:Lina.Customs.Core.SystemService.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Lina.Customs.Core.SystemService" /> class.
+            </summary>
+        </member>
+        <member name="M:Lina.Customs.Core.SystemService.CountDown(System.Int32,System.Action,System.Action,System.Int32)">
+            <summary>
+            Counts down. atTime and timeStep unit second
+            </summary>
+            <param name="atTime">At time.</param>
+            <param name="actionStep">Action step.</param>
+            <param name="actionDone">Action done.</param>
+            <param name="timeStep">Time step.</param>
+        </member>
+        <member name="T:Lina.Customs.Core.PhotoModel">
+            <summary>
+            Photo model.
+            </summary>
+        </member>
+        <member name="M:Lina.Customs.Core.PhotoModel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Lina.Customs.Core.PhotoModel" /> class.
+            </summary>
+        </member>
+        <member name="P:Lina.Customs.Core.PhotoModel.Path">
+            <summary>
+            Gets or sets the path.
+            </summary>
+            <value>The path.</value>
+        </member>
+        <member name="P:Lina.Customs.Core.PhotoModel.Count">
+            <summary>
+            Gets or sets the count.
+            </summary>
+            <value>The count.</value>
+        </member>
+        <member name="T:Lina.Customs.Core.AlbumModel">
+            <summary>
+            Album model.
+            </summary>
+        </member>
+        <member name="M:Lina.Customs.Core.AlbumModel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Lina.Customs.Core.AlbumModel" /> class.
+            </summary>
+        </member>
+        <member name="P:Lina.Customs.Core.AlbumModel.Count">
+            <summary>
+            Gets or sets the count.
+            </summary>
+            <value>The count.</value>
+        </member>
+        <member name="P:Lina.Customs.Core.AlbumModel.Path">
+            <summary>
+            Gets or sets the path.
+            </summary>
+            <value>The path.</value>
+        </member>
+        <member name="P:Lina.Customs.Core.AlbumModel.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:Lina.Customs.Core.AlbumModel.PosterImage">
+            <summary>
+            Gets or sets the poster image.
+            </summary>
+            <value>The poster image.</value>
+        </member>
+        <member name="T:Lina.Customs.Core.CTGlobalService">
+            <summary>
+            CT global service.
+            </summary>
+        </member>
+        <member name="P:Lina.Customs.Core.CTGlobalService.Setting">
+            <summary>
+            Gets the setting.
+            </summary>
+            <value>The setting.</value>
+        </member>
+        <member name="P:Lina.Customs.Core.CTGlobalService.Converter">
+            <summary>
+            Gets the converter.
+            </summary>
+            <value>The converter.</value>
+        </member>
+        <member name="P:Lina.Customs.Core.CTGlobalService.Payment">
+            <summary>
+            Gets the payment.
+            </summary>
+            <value>The payment.</value>
+        </member>
+        <member name="P:Lina.Customs.Core.CTGlobalService.Platform">
+            <summary>
+            Gets the platform.
+            </summary>
+            <value>The platform.</value>
+        </member>
+        <member name="P:Lina.Customs.Core.CTGlobalService.System">
+            <summary>
+            Gets the system.
+            </summary>
+            <value>The system.</value>
+        </member>
+        <member name="M:Lina.Customs.Core.CTGlobalService.WriteLine(System.String)">
+            <summary>
+            Writes the line.
+            </summary>
+            <param name="st">St.</param>
+        </member>
+        <member name="T:Lina.Customs.Core.IFacebookService">
+            <summary>
+            I facebook service.
+            </summary>
+        </member>
+        <member name="P:Lina.Customs.Core.IFacebookService.IsLogin">
+            <summary>
+            Gets a value indicating whether this instance is login.
+            </summary>
+            <value>
+                <c>true</c> if this instance is login; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="M:Lina.Customs.Core.IFacebookService.Login(System.Action{System.Boolean,System.String})">
+            <summary>
+            Login the specified actionDone.
+            </summary>
+            <param name="actionDone">Action done.</param>
+        </member>
+        <member name="M:Lina.Customs.Core.IFacebookService.Logout(System.Action{System.Boolean,System.String})">
+            <summary>
+            Logout the specified actionDone.
+            </summary>
+            <param name="actionDone">Action done.</param>
+        </member>
+        <member name="T:Lina.Customs.Core.FacebookService">
+            <summary>
+            Facebook service.
+            </summary>
+        </member>
+        <member name="P:Lina.Customs.Core.FacebookService.IsLogin">
+            <summary>
+            Gets a value indicating whether this instance is login.
+            </summary>
+            <value>true</value>
+            <c>false</c>
+        </member>
+        <member name="M:Lina.Customs.Core.FacebookService.Login(System.Action{System.Boolean,System.String})">
+            <summary>
+            Login the specified actionDone.
+            </summary>
+            <param name="actionDone">Action done.</param>
+        </member>
+        <member name="M:Lina.Customs.Core.FacebookService.Logout(System.Action{System.Boolean,System.String})">
+            <summary>
+            Logout the specified actionDone.
+            </summary>
+            <param name="actionDone">Action done.</param>
+        </member>
+        <member name="T:Lina.AnCo.Core.LNCounter">
+            <summary>
+            Counter.
+            </summary>
+        </member>
+        <member name="P:Lina.AnCo.Core.LNCounter.Time">
+            <summary>
+            Gets or sets the time.
+            </summary>
+            <value>The time.</value>
+        </member>
+        <member name="P:Lina.AnCo.Core.LNCounter.ActionStep">
+            <summary>
+            Gets or sets the action step.
+            </summary>
+            <value>The action step.</value>
+        </member>
+        <member name="P:Lina.AnCo.Core.LNCounter.ActionStop">
+            <summary>
+            Gets or sets the action stop.
+            </summary>
+            <value>The action stop.</value>
+        </member>
+        <member name="P:Lina.AnCo.Core.LNCounter.ActionEnd">
+            <summary>
+            Gets or sets the action end.
+            </summary>
+            <value>The action end.</value>
+        </member>
+        <member name="P:Lina.AnCo.Core.LNCounter.ActionPause">
+            <summary>
+            Gets or sets the action pause.
+            </summary>
+            <value>The action pause.</value>
+        </member>
+        <member name="P:Lina.AnCo.Core.LNCounter.ActionContinus">
+            <summary>
+            Gets or sets the action continus.
+            </summary>
+            <value>The action continus.</value>
+        </member>
+        <member name="M:Lina.AnCo.Core.LNCounter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Lina.AnCo.Core.LNCounter" /> class.
+            </summary>
+        </member>
+        <member name="P:Lina.AnCo.Core.LNCounter.ShareCounter">
+            <summary>
+            Gets the current user.
+            </summary>
+            <value>The current user.</value>
+        </member>
+        <member name="M:Lina.AnCo.Core.LNCounter.Start(System.Int32)">
+            <summary>
+            Start the specified _time.
+            </summary>
+            <param name="_time">Time.</param>
+        </member>
+        <member name="M:Lina.AnCo.Core.LNCounter.Stop">
+            <summary>
+            Stop this instance.
+            </summary>
+        </member>
+        <member name="M:Lina.AnCo.Core.LNCounter.Pause">
+            <summary>
+            Pause this instance.
+            </summary>
+        </member>
+        <member name="M:Lina.AnCo.Core.LNCounter.Resume">
+            <summary>
+            Resume this instance.
+            </summary>
+        </member>
+        <member name="M:Lina.AnCo.Core.LNCounter.Dispose">
+            <summary>
+            Releases all resource used by the <see cref="T:Lina.AnCo.Core.LNCounter" /> object.
+            </summary>
+            <remarks>Call <see cref="M:Lina.AnCo.Core.LNCounter.Dispose" /> when you are finished using the <see cref="T:Lina.AnCo.Core.LNCounter" />. The
+            <see cref="M:Lina.AnCo.Core.LNCounter.Dispose" /> method leaves the <see cref="T:Lina.AnCo.Core.LNCounter" /> in an unusable state. After calling
+            <see cref="M:Lina.AnCo.Core.LNCounter.Dispose" />, you must release all references to the <see cref="T:Lina.AnCo.Core.LNCounter" /> so the
+            garbage collector can reclaim the memory that the <see cref="T:Lina.AnCo.Core.LNCounter" /> was occupying.</remarks>
+        </member>
+    </members>
+</doc>

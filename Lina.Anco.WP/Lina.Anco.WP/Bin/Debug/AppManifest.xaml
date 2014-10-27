@@ -1,0 +1,17 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="Lina.Anco.WP" EntryPointType="Lina.Anco.WP.App" RuntimeVersion="4.7.50308.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="Lina.Anco.WP" Source="Lina.Anco.WP.dll" />
+    <AssemblyPart x:Name="Lina.AnCo.Core" Source="Lina.AnCo.Core.dll" />
+    <AssemblyPart x:Name="Lina.Customs.Core" Source="Lina.Customs.Core.dll" />
+    <AssemblyPart x:Name="Lina.Store.WP" Source="Lina.Store.WP.dll" />
+    <AssemblyPart x:Name="Newtonsoft.Json" Source="Newtonsoft.Json.dll" />
+    <AssemblyPart x:Name="System.Net.Http" Source="System.Net.Http.dll" />
+    <AssemblyPart x:Name="System.Net.Http.Extensions" Source="System.Net.Http.Extensions.dll" />
+    <AssemblyPart x:Name="System.Net.Http.Primitives" Source="System.Net.Http.Primitives.dll" />
+    <AssemblyPart x:Name="Wp7nl" Source="Wp7nl.dll" />
+    <AssemblyPart x:Name="System.Windows.Interactivity" Source="System.Windows.Interactivity.dll" />
+    <AssemblyPart x:Name="Microsoft.Phone.Controls.Toolkit" Source="Microsoft.Phone.Controls.Toolkit.dll" />
+    <AssemblyPart x:Name="Phone7.Fx.Excerpt" Source="Phone7.Fx.Excerpt.dll" />
+    <AssemblyPart x:Name="Wp7nl.External" Source="Wp7nl.External.dll" />
+  </Deployment.Parts>
+</Deployment>

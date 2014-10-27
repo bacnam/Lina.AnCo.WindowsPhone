@@ -1,0 +1,68 @@
+C:\Users\Hoang Tuan\Desktop\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\Hoang Tuan\Desktop\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\Hoang Tuan\Desktop\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\Hoang Tuan\Desktop\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\Hoang Tuan\Desktop\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\Hoang Tuan\Desktop\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\Hoang Tuan\Desktop\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Lina.Anco.WP.dll
+C:\Users\Hoang Tuan\Desktop\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Lina.Anco.WP.pdb
+C:\Users\Hoang Tuan\Desktop\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\AppManifest.xaml
+C:\Users\Hoang Tuan\Desktop\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\Hoang Tuan\Desktop\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Lina.Anco.WP_Debug_AnyCPU.xap
+C:\Users\Hoang Tuan\Desktop\Lina.Anco.WP\Lina.Anco.WP\obj\Debug\App.g.cs
+C:\Users\Hoang Tuan\Desktop\Lina.Anco.WP\Lina.Anco.WP\obj\Debug\MainPage.g.cs
+C:\Users\Hoang Tuan\Desktop\Lina.Anco.WP\Lina.Anco.WP\obj\Debug\Lina.Anco.WP.g.resources
+C:\Users\Hoang Tuan\Desktop\Lina.Anco.WP\Lina.Anco.WP\obj\Debug\Lina.Anco.WP.Resources.AppResources.resources
+C:\Users\Hoang Tuan\Desktop\Lina.Anco.WP\Lina.Anco.WP\obj\Debug\Lina.Anco.WP.csproj.GenerateResource.Cache
+C:\Users\Hoang Tuan\Desktop\Lina.Anco.WP\Lina.Anco.WP\obj\Debug\Lina.Anco.WP.dll
+C:\Users\Hoang Tuan\Desktop\Lina.Anco.WP\Lina.Anco.WP\obj\Debug\Lina.Anco.WP.pdb
+C:\Users\Hoang Tuan\Desktop\Lina.Anco.WP\Lina.Anco.WP\obj\Debug\XapCacheFile.xml
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\obj\Debug\Lina.Anco.WP.csprojResolveAssemblyReference.cache
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\obj\Debug\App.g.cs
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\obj\Debug\MainPage.g.cs
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\obj\Debug\Lina.Anco.WP.g.resources
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\obj\Debug\Lina.Anco.WP.Resources.AppResources.resources
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\obj\Debug\Lina.Anco.WP.csproj.GenerateResource.Cache
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\obj\Debug\Lina.Anco.WP.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Assets\ApplicationIcon.png
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Lina.Anco.WP.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Lina.Anco.WP.pdb
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\AppManifest.xaml
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Properties\WMAppManifest.xml
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Lina.Anco.WP_Debug_AnyCPU.xap
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Lina.AnCo.Core.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Lina.Customs.Core.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Lina.Store.WP.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Newtonsoft.Json.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\System.Net.Http.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\System.Net.Http.Extensions.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\System.Net.Http.Primitives.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Wp7nl.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\System.Windows.Interactivity.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Phone7.Fx.Excerpt.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Wp7nl.External.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Lina.Store.WP.pdb
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Lina.AnCo.Core.xml
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Lina.Customs.Core.xml
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Wp7nl.pdb
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Phone7.Fx.Excerpt.pdb
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\Wp7nl.External.pdb
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\de\System.Windows.Interactivity.resources.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\en\System.Windows.Interactivity.resources.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\es\System.Windows.Interactivity.resources.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\fr\System.Windows.Interactivity.resources.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\it\System.Windows.Interactivity.resources.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\ja\System.Windows.Interactivity.resources.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\ko\System.Windows.Interactivity.resources.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\ru\System.Windows.Interactivity.resources.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\obj\Debug\StartGame.g.cs
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\obj\Debug\Lina.Anco.WP.pdb
+H:\WP\Lina.Anco.WP\Lina.Anco.WP\obj\Debug\XapCacheFile.xml
